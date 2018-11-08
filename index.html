@@ -6,8 +6,10 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- Logo -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Huddle landing page with alternating sections</title>
@@ -19,7 +21,7 @@
 </head>
 <body>
 <section>
-    <div class="container">
+    <div class="header-container">
       <img src="images/logo.svg" alt="logo" class="logo">
       <button class="tryitfree">Try It Free</button>
     </div>
@@ -33,24 +35,28 @@
         <button class="getstarted">Get Started For Free</button>
         <img src="images/screen-mockups.svg" alt="screen-mockups" class="mockup-svg">
       </div>
-        
-    <div>
-        <h2>1.4k+</h2>
-        <p>Communities Formed</p> 
+       
+    <div class="maincontainer">
+      <div class="commContainer">
+          <img src="images/icon-communities.svg" alt="communities" class="icons">
+          <h2>1.4k+</h2>
+          <p>Communities Formed</p> 
+      </div>
+     <div class="commContainer">
+          <img src="images/icon-messages.svg" alt="Messages" class="">
+          <h2>2.7m+</h2>
+          <P>Messages Sent</P>
+     </div>
     </div>
-   <div>
-        <h2>2.7m+</h2>
-        <P>Messages Sent</P>
-   </div>
 </section> 
-<div>
-  <img src="images/illustration-grow-together.svg" alt="">
+<div class="maincontainer">
+  <img src="images/illustration-grow-together.svg" alt="illustration-grow-together" class="mockup-svg">
   <h3>Grow Together</h3>
   <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
     Think of the insightful conversations you miss out on with a feedback form.</p>
 </div>
-<div>
-    <img src="images/illustration-flowing-conversation.svg" alt="Flowing conversation">
+<div class="maincontainer">
+    <img src="images/illustration-flowing-conversation.svg" alt="Flowing conversation" class="mockup-svg">
     <h3>
       Flowing Conversations
     </h3>
@@ -59,8 +65,8 @@
       just-in-time loading for a more natural flow.
     </p>
 </div>
-<div>
-    <img src="images/illustration-your-users.svg" alt="your Users">
+<div class="maincontainer">
+    <img src="images/illustration-your-users.svg" alt="your Users" class="mockup-svg">
     <h3>
       Your Users
     </h3>
@@ -70,36 +76,37 @@
     </p>
 </div>
 
-  <h2>
-    Ready To Build Your Community?
-  </h2>
-  <button>Get Started For Free</button>
+  <div class="maincontainer">
+    <h3>Ready To Build Your Community?</h3>
+    <button class="getstarted">Get Started For Free</button>
+  </div>
 
-  <section>  
+  <section class="maincontainer">  
     <img src="images/bg-footer-top-mobile.svg" alt="">
-  <h3>
-    Newsletter
-  </h3>
-  <form action="#">
-    <p>
-      To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-      send you spam or pass on your email address
-    </p>
-    <input name="email" type="email"><br>
-    <input type="submit" name="subscribe" id="subscribe" value="Subscribe">
-  </form>
-</section>
+  <div class="news">
+    
+    <form action="#" class="formContainer" >
+      <h3 class="newsletter">Newsletter</h3>
+      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address</p>
+      <input name="email" type="email" class="email"><br>
+      <input type="submit" name="subscribe" id="subscribe" value="Subscribe" class="subscribe">
+    </form>
+  </div>
+
   <footer>
-        <h2>Huddle</h2>
+        <h2><img src="images/icon-messages.svg" alt="Messages" class="message"> Huddle</h2>
        <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
         vestibulum a, ultrices quis sem.</p>
         
-        <a href="">Phone: +1-543-123-4567</a><br>
-        <a href="#">example@huddle.com</a>
+        <p><img src="images/icon-phone.svg"> Phone: +1-543-123-4567</p>
+        <p><img src="images/icon-email.svg" alt=""> example@huddle.com</p>
         <p class="attribution">
             This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
         </p>
+       
   </footer>
+</section>
 </body>
 </html>

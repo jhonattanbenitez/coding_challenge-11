@@ -1,5 +1,5 @@
 html{
-    font-size: 16px;
+    font-size: 18px;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -7,16 +7,16 @@ body{
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     text-align: center;
-    
 }
-.container{
+.header-container{
     display: flex;
     justify-content: space-around;
     margin: 1rem;
     margin-top: 2rem;
     align-items: flex-end;
+    width: 375px;
 }
 .logo{
 
@@ -35,21 +35,96 @@ h1, h2, h3{
     text-align: center;
     width: 120px;
 }
+.tryitfree:focus, .getstarted:focus{
+    outline: none;
+}
 .welcome-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 25px;
+    text-align: center;
+    width: 375px;
 }
 .getstarted{
     color: white;
     background-color: hsl(322, 100%, 66%);
     border-radius: 25px;
     border: none;
-    width: 50%;
+    width: 200px;
     padding: 1rem;
     font-size: 0.9rem;
-    margin: 1rem;
+    margin: 4rem;
 }
+.getstarted:hover{
+    background-color: hsl(276, 100%, 66%);
+}
+
 .mockup-svg{
     width: 80%;
 }
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    
+}
+.commContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 2rem;
+
+}
+.commContainer p{
+    margin: 0;
+    align-self: center;
+}
+.icons{
+    align-self: flex-start;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+h2{
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+form .newsletter{
+    text-align: left;
+}
+.news{
+    background:  hsl(192, 100%, 9%);
+    color: white;
+    display: flex;
+}
+.email{
+    align-self: flex-end;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 300px; 
+}
+.subscribe{
+    align-self: flex-end;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    width: 200px;
+    font-size: 0.9rem;
+}
+footer{
+    background:  hsl(192, 100%, 9%);
+    color: white;
+    padding: 1rem;
+}
+
